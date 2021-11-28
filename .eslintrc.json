@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    // "jest": true
+  },
+  "extends": [
+    "eslint:recommended"
+    // "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      // "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  // "plugins": ["react"],
+  "rules": {
+    "singleQuote": true,
+    "react/react-in-jsx-scope": "on",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
