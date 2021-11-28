@@ -10,27 +10,27 @@
 <Index />
 
 <Router {url}>
-  <nav>
-    <div class="home-container">
-      <Link class=".nav__link" to="/">Home</Link>
-      <Link class=".nav__link" to="card">Card</Link>
-      <Link class=".nav__link" to="slides">Slides</Link>
-    </div>
-  </nav>
-
   <Route path="/">
+    <nav>
+      <div class="home-container">
+        <Link class=".nav__link" to="/">Home</Link>
+        <Link class=".nav__link" to="card">Card</Link>
+        <Link class=".nav__link" to="slides">Slides</Link>
+      </div>
+    </nav>
+
     <div class="home">
       <div class="home-container">
         <h1 class="home__title">Home page</h1>
 
         <br />
-        Slides:
-        <Link to="slides">Slides</Link>
+        Card demo:
+        <Link to="card">Card</Link>
 
         <br />
         <br />
-        Card demo:
-        <Link to="card">Card</Link>
+        Slides:
+        <Link to="slides">Slides</Link>
       </div>
     </div>
   </Route>
@@ -41,11 +41,11 @@
 
 <style lang="scss">
   .home-container {
-    @apply container mx-auto py-4;
+    @apply container mx-auto py-2;
   }
 
   nav {
-    @apply bg-indigo-700 text-gray-200;
+    @apply bg-green-600 text-gray-200;
 
     .home-container {
       @apply flex;
@@ -53,23 +53,24 @@
 
     :global(a) {
       @apply text-base block
-      px-8 py-2 
-    border-white/10 border-b-2
+        px-8 py-2 
       hover:border-white rounded rounded-b-none;
     }
   }
 
+  :global(body) {
+    @apply bg-gray-200;
+  }
+
   .home {
-    @apply bg-gray-200 
-    absolute bottom-0 left-0 right-0 top-[74px]
-    w-full mx-auto py-24 px-4;
+    @apply w-full mx-auto py-24 px-4;
 
     &__title {
-      @apply text-5xl italic text-indigo-800;
+      @apply text-5xl  text-green-600;
     }
 
     :global(a) {
-      @apply text-indigo-800 italic border-b-2 text-xl;
+      @apply text-green-600 italic border-b-2 text-xl;
     }
   }
 </style>

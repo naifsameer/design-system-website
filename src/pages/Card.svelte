@@ -7,14 +7,13 @@
 <div class="container">
   <h1 class="title">Card Component system</h1>
 
-  <Line />
-
-  <div class="column">
-    <Controll />
-  </div>
 
   <div class="column">
     <Preview />
+  </div>
+
+  <div class="column">
+    <Controll />
   </div>
 </div>
 
@@ -33,16 +32,15 @@
     @apply mx-auto px-3;
 
     .title {
-      @apply w-full;
-      @apply my-6;
-      @apply font-medium text-center text-3xl text-blue-900;
+      @apply w-full my-6 mb-8
+        font-medium text-center text-3xl text-blue-900;
     }
 
     .column {
-      @apply rounded w-full md:w-1/2;
+      @apply rounded w-full md:w-1/2 ;
 
       &:first-of-type {
-        @apply md:pr-1;
+        @apply md:pr-1 min-h-[600px];
       }
     }
   }

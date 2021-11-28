@@ -14,8 +14,8 @@
     cardLinkUrl,
   } from 'store/card';
 
-  import headerImage from 'assets/svelte.png';
-  import cardImage from 'assets/card-image.jpg';
+  // import headerImage from 'assets/svelte.png';
+  import cardImage from 'assets/card-bg.svg';
   import userAvatar from 'assets/user-avatar.jpg';
 </script>
 
@@ -104,11 +104,13 @@
 </div>
 
 <style lang="scss">
- 
+
+:global(html body) {
+  background-color: white ;
+}
 
   .card {
-    width: 350px;
-    margin: 2em auto;
+    @apply mx-auto w-full md:w-[350px] overflow-hidden;
   }
 
   /* header  */
