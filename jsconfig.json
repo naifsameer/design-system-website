@@ -30,6 +30,7 @@
     "paths": {
       "components/*": ["components/*"],
       "assets/*": ["assets/*"],
+      "pages/*": ["pages/*"],
       "store/*": ["store/*"]
     }
   },

@@ -17,4 +17,8 @@
     /* @apply bg-gradient-to-l to-blue-400 from-purple-400; */
     font-family: sans-serif !important;
   }
+
+  html, body {
+    scroll-behavior: smooth;
+  }
 </style>

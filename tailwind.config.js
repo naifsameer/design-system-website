@@ -1,12 +1,11 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.svelte'],
+  purge: ['./index.html', './src/*.svelte', './src/**/*.svelte', './src/**/**/*.svelte'],
   mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       borderColor: {
         'c-border': 'border-gray-300',
-        'naif': 'red'
       },
     },
   },
