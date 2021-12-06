@@ -196,7 +196,7 @@
   }
 
   .btns {
-    @apply flex justify-evenly max-w-[600px] mx-auto;
+    @apply flex justify-evenly max-w-[600px] mx-auto flex-wrap;
   }
 
   .btn-bg {
